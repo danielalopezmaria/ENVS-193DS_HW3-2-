@@ -3,3 +3,13 @@ title: "homework_3_quarto"
 format: html
 editor: visual
 ---
+
+Problem 1
+
+a\. I could calculate the mean of my water intake on workdays compared to non-work days because I have to take longer bike rides and I am on my feet a lot longer
+
+b\.
+
+c\.
+
+d\.
