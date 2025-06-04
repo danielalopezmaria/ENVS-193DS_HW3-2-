@@ -44,12 +44,14 @@ boxplot(water_intake_oz ~ work_day,
         main = "Water Intake by Work Day",
         xlab = "Work Day",
         ylab = "Water Intake (oz)",
-        col = c("lightpink", "lightgreen"))
+        col = c("lightpink", "lightgreen")) 
+
+
+mtext("Figure 1: boxplot comparing mean water intake between work days and nonwork days ",
+      side=1, line=3.6, cex= 0.57, col = "black")
 
 
 ```
-
-c\.
 
 d\.
 
