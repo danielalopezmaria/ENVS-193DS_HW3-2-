@@ -89,4 +89,14 @@ In my piece I am trying to display the difference in drinking habits throughout 
 
 Problem 3
 
-A.
+A. The statistical tests the author used to answer his main research question is a T-test. Some valuable questions included in the article are “Can microalgae cultivation using livestock wastewater and biogas improve biomass and bioenergy production while treating wastewater”. They used a t-test to find the microalgal biomass concentration and used a logistic regression model to understand the curve of micro algae for different kinds of cultivating conditions.
+
+![](images/4:25_plot.jpg)
+
+B. Visual Clarity
+
+The table was extremely clear in representing how the different types of cultivating medias make a difference in the total lipids.
+
+C. Aesthetic Clarity
+
+D. Recommendations
