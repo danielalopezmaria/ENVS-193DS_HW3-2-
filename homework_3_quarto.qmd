@@ -50,7 +50,7 @@ boxplot(water_intake_oz ~ work_day,
 
 #made a caption for the boxplot
 mtext("Figure 1: boxplot comparing mean water intake between work days and nonwork days ",
-      side=1, line=3.6, cex= 0.57, col = "black")
+      side=1, line=3.6, cex= 0.9, col = "black")
 
 
 ```
@@ -65,4 +65,4 @@ Problem 2
 
 a\. An effective visualization for my data could be a time series plot that tracks water intake as a graph through the days. It would track trends and would allow for me to visually follow the amount of water I intake in a month. The graph could also look like waves to tie in the water and give it a smoother feel!
 
-b\. ![](images/waterintakegraph.jpg)
+![](images/waterintakegraph.jpg)
