@@ -4,12 +4,55 @@ format: html
 editor: visual
 ---
 
+```{r}
+library(tidyverse)
+library(here)
+library(flextable)
+library(janitor)
+library(readxl)
+```
+
 Problem 1
 
 a\. I could calculate the mean of my water intake on workdays compared to non-work days because I have to take longer bike rides and I am on my feet a lot longer
 
-b\.
+b\. Visualization
+
+```{r}
+#name hydration data
+
+hydrationdata <- read.csv ("SM 193DS - Sheet1.csv")
+
+hydration_clean <- hydrationdata |>
+  rename(
+    water_intake_oz = "water.intake..oz.",
+    work_day = "work.day"
+  ) |> 
+  select(Date, water_intake_oz, work_day) |>
+  mutate(
+    work_day= tolower(trimws(work_day)),
+    water_intake_oz= as.numeric(water_intake_oz)
+  )
+
+mean_water_intake <- hydration_clean |>
+  group_by(work_day) |>
+  summarise(mean_intake= mean(water_intake_oz, na.rm = TRUE))
+
+
+boxplot(water_intake_oz ~ work_day, 
+        data = hydration_clean,
+        main = "Water Intake by Work Day",
+        xlab = "Work Day",
+        ylab = "Water Intake (oz)",
+        col = c("lightpink", "lightgreen"))
+
+
+```
 
 c\.
 
 d\.
+
+```{r}
+flextable(mean_water_intake)
+```
